@@ -25,8 +25,8 @@
           <id>7974dba6-c931-42f7-abd4-8e0bc99fbe3c</id>
           <apiUri>https://api.github.com</apiUri>
           <repoOwner>AmineBouzidi</repoOwner>
-          <repository>m-moire-master</repository>
-          <repositoryUrl>https://github.com/AmineBouzidi/m-moire-master.git</repositoryUrl>
+          <repository>master1</repository>
+          <repositoryUrl>https://github.com/AmineBouzidi/master1.git</repositoryUrl>
           <traits>
             <org.jenkinsci.plugins.github__branch__source.BranchDiscoveryTrait>
               <strategyId>1</strategyId>
