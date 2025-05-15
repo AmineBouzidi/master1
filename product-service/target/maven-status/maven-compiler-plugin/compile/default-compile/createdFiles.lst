@@ -1,0 +1,10 @@
+com\amine\productservice\repository\ProductRepository.class
+com\amine\productservice\dto\ProductResponse.class
+com\amine\productservice\ProductServiceApplication.class
+com\amine\productservice\dto\ProductResponse$ProductResponseBuilder.class
+com\amine\productservice\controller\ProductController.class
+com\amine\productservice\model\Product$ProductBuilder.class
+com\amine\productservice\service\ProductService.class
+com\amine\productservice\dto\ProductRequest.class
+com\amine\productservice\model\Product.class
+com\amine\productservice\dto\ProductRequest$ProductRequestBuilder.class

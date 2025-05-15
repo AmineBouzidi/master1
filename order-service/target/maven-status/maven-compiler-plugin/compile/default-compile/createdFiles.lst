@@ -1,0 +1,12 @@
+com\amine\orderservice\dto\OrderLineItemsDto.class
+com\amine\orderservice\service\OrderService.class
+com\amine\orderservice\config\WebClientConfig.class
+com\amine\orderservice\dto\InventoryResponse.class
+com\amine\orderservice\event\OrderPlacedEvent.class
+com\amine\orderservice\repository\OrderRepository.class
+com\amine\orderservice\dto\OrderRequest.class
+com\amine\orderservice\OrderServiceApplication.class
+com\amine\orderservice\model\OrderLineItems.class
+com\amine\orderservice\dto\InventoryResponse$InventoryResponseBuilder.class
+com\amine\orderservice\controller\OrderController.class
+com\amine\orderservice\model\Order.class

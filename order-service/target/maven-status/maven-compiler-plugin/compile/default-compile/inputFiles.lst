@@ -1,0 +1,11 @@
+C:\Users\amine\OneDrive\Desktop\Master-main\order-service\src\main\java\com\amine\orderservice\OrderServiceApplication.java
+C:\Users\amine\OneDrive\Desktop\Master-main\order-service\src\main\java\com\amine\orderservice\dto\OrderLineItemsDto.java
+C:\Users\amine\OneDrive\Desktop\Master-main\order-service\src\main\java\com\amine\orderservice\dto\OrderRequest.java
+C:\Users\amine\OneDrive\Desktop\Master-main\order-service\src\main\java\com\amine\orderservice\config\WebClientConfig.java
+C:\Users\amine\OneDrive\Desktop\Master-main\order-service\src\main\java\com\amine\orderservice\model\OrderLineItems.java
+C:\Users\amine\OneDrive\Desktop\Master-main\order-service\src\main\java\com\amine\orderservice\controller\OrderController.java
+C:\Users\amine\OneDrive\Desktop\Master-main\order-service\src\main\java\com\amine\orderservice\repository\OrderRepository.java
+C:\Users\amine\OneDrive\Desktop\Master-main\order-service\src\main\java\com\amine\orderservice\model\Order.java
+C:\Users\amine\OneDrive\Desktop\Master-main\order-service\src\main\java\com\amine\orderservice\dto\InventoryResponse.java
+C:\Users\amine\OneDrive\Desktop\Master-main\order-service\src\main\java\com\amine\orderservice\event\OrderPlacedEvent.java
+C:\Users\amine\OneDrive\Desktop\Master-main\order-service\src\main\java\com\amine\orderservice\service\OrderService.java

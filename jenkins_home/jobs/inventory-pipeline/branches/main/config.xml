@@ -1,0 +1,56 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@1520.v56d65e3b_4566">
+  <actions/>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <org.jenkinsci.plugins.workflow.multibranch.BranchJobProperty plugin="workflow-multibranch@806.vb_b_688f609ee9">
+      <branch plugin="branch-api@2.1217.v43d8b_b_d8b_2c7">
+        <sourceId>7974dba6-c931-42f7-abd4-8e0bc99fbe3c</sourceId>
+        <head class="org.jenkinsci.plugins.github_branch_source.BranchSCMHead" plugin="github-branch-source@1815.v9152b_2ff7a_1b_">
+          <name>main</name>
+        </head>
+        <scm class="hudson.plugins.git.GitSCM" plugin="git@5.7.0">
+          <configVersion>2</configVersion>
+          <userRemoteConfigs>
+            <hudson.plugins.git.UserRemoteConfig>
+              <name>origin</name>
+              <refspec>+refs/heads/main:refs/remotes/origin/main</refspec>
+              <url>https://github.com/AmineBouzidi/m-moire-master.git</url>
+            </hudson.plugins.git.UserRemoteConfig>
+          </userRemoteConfigs>
+          <branches class="singleton-list">
+            <hudson.plugins.git.BranchSpec>
+              <name>main</name>
+            </hudson.plugins.git.BranchSpec>
+          </branches>
+          <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+          <browser class="hudson.plugins.git.browser.GithubWeb">
+            <url>https://github.com/AmineBouzidi/m-moire-master</url>
+          </browser>
+          <submoduleCfg class="empty-list"/>
+          <extensions>
+            <jenkins.plugins.git.GitSCMSourceDefaults>
+              <includeTags>false</includeTags>
+            </jenkins.plugins.git.GitSCMSourceDefaults>
+          </extensions>
+        </scm>
+        <properties/>
+        <actions>
+          <org.jenkinsci.plugins.github__branch__source.GitHubLink plugin="github-branch-source@1815.v9152b_2ff7a_1b_">
+            <url>https://github.com/AmineBouzidi/m-moire-master/tree/main</url>
+          </org.jenkinsci.plugins.github__branch__source.GitHubLink>
+          <jenkins.scm.api.metadata.ObjectMetadataAction plugin="scm-api@704.v3ce5c542825a_">
+            <objectDisplayName>main</objectDisplayName>
+            <objectUrl>https://github.com/AmineBouzidi/m-moire-master/tree/main</objectUrl>
+          </jenkins.scm.api.metadata.ObjectMetadataAction>
+          <jenkins.scm.api.metadata.PrimaryInstanceMetadataAction plugin="scm-api@704.v3ce5c542825a_"/>
+        </actions>
+      </branch>
+    </org.jenkinsci.plugins.workflow.multibranch.BranchJobProperty>
+  </properties>
+  <definition class="org.jenkinsci.plugins.workflow.multibranch.SCMBinder" plugin="workflow-multibranch@806.vb_b_688f609ee9">
+    <scriptPath>inventory-service/Jenkinsfile</scriptPath>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>

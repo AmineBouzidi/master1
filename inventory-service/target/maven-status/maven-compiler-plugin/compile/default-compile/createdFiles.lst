@@ -1,0 +1,7 @@
+com\amine\inventoryservice\repository\InventoryRepository.class
+com\amine\inventoryservice\InventoryServiceApplication.class
+com\amine\inventoryservice\dto\InventoryResponse$InventoryResponseBuilder.class
+com\amine\inventoryservice\model\Inventory.class
+com\amine\inventoryservice\controller\InventoryController.class
+com\amine\inventoryservice\dto\InventoryResponse.class
+com\amine\inventoryservice\service\InventoryService.class
