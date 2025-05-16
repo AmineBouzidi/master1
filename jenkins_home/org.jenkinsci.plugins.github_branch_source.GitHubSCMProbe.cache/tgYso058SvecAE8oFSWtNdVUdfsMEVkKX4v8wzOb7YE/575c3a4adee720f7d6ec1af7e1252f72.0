@@ -1,17 +1,16 @@
-https://api.github.com/repos/AmineBouzidi/master1/git/refs/heads/main
+https://api.github.com/repos/AmineBouzidi/master1/contents/inventory-service/Jenkinsfile?ref=516bfab133406e88306841e38d3731f2bb1592bb
 GET
 2
 Accept: application/vnd.github.v3+json
 Accept-Encoding: gzip
 HTTP/1.1 200 
-29
-date: Fri, 16 May 2025 08:20:38 GMT
+28
+date: Fri, 16 May 2025 08:30:47 GMT
 content-type: application/json; charset=utf-8
 cache-control: public, max-age=60, s-maxage=60
 vary: Accept,Accept-Encoding, Accept, X-Requested-With
-etag: W/"d8034915efe929116ab099b8d0e0561fea13e4d7853fe4b12b1805f6c359c5b0"
-last-modified: Fri, 16 May 2025 08:18:33 GMT
-x-poll-interval: 300
+etag: W/"87fa8a86d43dc6a583ddd2a9ba3b88e888a3e7ca"
+last-modified: Fri, 16 May 2025 08:16:41 GMT
 x-github-media-type: github.v3; format=json
 x-github-api-version-selected: 2022-11-28
 access-control-expose-headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset
@@ -26,14 +25,14 @@ content-encoding: gzip
 server: github.com
 accept-ranges: bytes
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 52
+x-ratelimit-remaining: 48
 x-ratelimit-reset: 1747387232
 x-ratelimit-resource: core
-x-ratelimit-used: 8
-content-length: 211
-x-github-request-id: ECFA:361C34:15F0C58:16B3563:6826F556
-OkHttp-Sent-Millis: 1747383639212
-OkHttp-Received-Millis: 1747383639444
+x-ratelimit-used: 12
+content-length: 1360
+x-github-request-id: ED6D:1A92A6:1839C01:18FE98C:6826F7B6
+OkHttp-Sent-Millis: 1747384247763
+OkHttp-Received-Millis: 1747384248022
 
 TLS_AES_128_GCM_SHA256
 3

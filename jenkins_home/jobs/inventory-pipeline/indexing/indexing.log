@@ -1,6 +1,6 @@
 Started by user unknown or anonymous
-[Thu May 15 12:29:06 UTC 2025] Starting branch indexing...
-[8mha:////4LyxbfwhL61Q3b/n5AjALdGwczhzxHvtAlIXz8xIYJy/AAAAhR+LCAAAAAAAAP9b85aBtbiIwSa/KF0vKzUvOzOvODlTryCnNB3I0kvPLMkoTYpPKkrMS86IL84vLUpO1XPPLPEoTXLOzyvOz0n1yy9JZYAARiYGRi8GzpLM3NTiksTcgooiBqmM0pTi/Dy9ZIhiPayaGCoKgPS0y68rXgEAkSACSY4AAAA=[0mConnecting to https://api.github.com with no credentials, anonymous access
+[Fri May 16 08:20:32 UTC 2025] Starting branch indexing...
+[8mha:////4EXHAxxemv7kNVj7TPp4UDxrHw8dW7+dfPrWcGOre+mfAAAAhB+LCAAAAAAAAP9b85aBtbiIwSa/KF0vKzUvOzOvODlTryCnNB3I0kvPLMkoTYpPKkrMS86IL84vLUpO1XPPLPEoTXLOzyvOz0n1yy9JZYAARiYGRi8GzpLM3NTiksTcgooiBqmM0pTi/Dy9ZIhiPayaGCoKgPS0G3oudwBdHy61jgAAAA==[0mConnecting to https://api.github.com with no credentials, anonymous access
 Examining [8mha:////4O09Fwlocbf5tOLMrJ/014gIgpN69qP/KJnFkLDMLP4mAAAApx+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMgQKWFQzygpKSi20tdPzyzJKE0C6srVd8zNzEt1yi+tykzJ1M9NLC5JLTIEAKnROmqsAAAA[0mAmineBouzidi/master1
 
   Checking branches...
@@ -12,7 +12,7 @@ Examining [8mha:////4O09Fwlocbf5tOLMrJ/014gIgpN69qP/KJnFkLDMLP4mAAAApx+LCAAAAAA
   Getting remote pull requests...
       ‘inventory-service/Jenkinsfile’ found
     Met criteria
-Changes detected: main (ce26dd8da452d204b82ed8f5a80676d1fb136864 → 481e9b1fd9be0eff11e6d71cda61fe6a13d6dd10)
+Changes detected: main (481e9b1fd9be0eff11e6d71cda61fe6a13d6dd10 → 516bfab133406e88306841e38d3731f2bb1592bb)
 Scheduled build for branch: main
 
   1 branches were processed
@@ -23,5 +23,5 @@ Scheduled build for branch: main
 
 Finished examining AmineBouzidi/master1
 
-[Thu May 15 12:29:07 UTC 2025] Finished branch indexing. Indexing took 1.1 sec
+[Fri May 16 08:20:34 UTC 2025] Finished branch indexing. Indexing took 2.5 sec
 Finished: SUCCESS

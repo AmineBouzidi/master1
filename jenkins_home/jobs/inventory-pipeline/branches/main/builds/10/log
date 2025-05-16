@@ -1,0 +1,27 @@
+Started by user unknown or anonymous
+[8mha:////4PXf/eQI7jiij4JPtjvVAPakKWZvX/zG//6tAS31wZWcAAAAhB+LCAAAAAAAAP9b85aBtbiIwSa/KF0vKzUvOzOvODlTryCnNB3I0kvPLMkoTYpPKkrMS86IL84vLUpO1XPPLPEoTXLOzyvOz0n1yy9JZYAARiYGRi8GzpLM3NTiksTcgooiBqmM0pTi/Dy9ZIhiPayaGCoKgPS0G+b/eABEEyA+jgAAAA==[0mConnecting to https://api.github.com with no credentials, anonymous access
+[8mha:////4DSQhXCjRMvcBl4oYKsLCSzQ+RDM/5DYMc+ggjbRgG3WAAAAhB+LCAAAAAAAAP9b85aBtbiIwSa/KF0vKzUvOzOvODlTryCnNB3I0kvPLMkoTYpPKkrMS86IL84vLUpO1XPPLPEoTXLOzyvOz0n1yy9JZYAARiYGRi8GzpLM3NTiksTcgooiBqmM0pTi/Dy9ZIhiPayaGCoKgPS0G+b/JQB49uE9jgAAAA==[0mJenkins-Imposed API Limiter: Current quota for Github API usage has 46 remaining (1 over budget). Next quota of 60 in 49 min. Sleeping for 4 min 0 sec.
+[8mha:////4DSQhXCjRMvcBl4oYKsLCSzQ+RDM/5DYMc+ggjbRgG3WAAAAhB+LCAAAAAAAAP9b85aBtbiIwSa/KF0vKzUvOzOvODlTryCnNB3I0kvPLMkoTYpPKkrMS86IL84vLUpO1XPPLPEoTXLOzyvOz0n1yy9JZYAARiYGRi8GzpLM3NTiksTcgooiBqmM0pTi/Dy9ZIhiPayaGCoKgPS0G+b/JQB49uE9jgAAAA==[0mJenkins is attempting to evenly distribute GitHub API requests. To configure a different rate limiting strategy, such as having Jenkins restrict GitHub API requests only when near or above the GitHub rate limit, go to "GitHub API usage" under "Configure System" in the Jenkins settings.
+java.lang.InterruptedException: sleep interrupted
+	at java.base/java.lang.Thread.sleep(Native Method)
+	at PluginClassLoader for github-branch-source//org.jenkinsci.plugins.github_branch_source.ApiRateLimitChecker$LocalChecker.waitUntilRateLimit(ApiRateLimitChecker.java:325)
+	at PluginClassLoader for github-branch-source//org.jenkinsci.plugins.github_branch_source.ApiRateLimitChecker$LocalChecker.checkRateLimit(ApiRateLimitChecker.java:271)
+	at PluginClassLoader for github-branch-source//org.jenkinsci.plugins.github_branch_source.ApiRateLimitChecker$RateLimitCheckerAdapter.checkRateLimit(ApiRateLimitChecker.java:244)
+	at PluginClassLoader for github-api//org.kohsuke.github.GitHubRateLimitChecker.checkRateLimit(GitHubRateLimitChecker.java:144)
+Caused: java.io.InterruptedIOException: sleep interrupted
+	at PluginClassLoader for github-api//org.kohsuke.github.GitHubRateLimitChecker.checkRateLimit(GitHubRateLimitChecker.java:158)
+	at PluginClassLoader for github-api//org.kohsuke.github.GitHubClient.sendRequest(GitHubClient.java:460)
+Caused: org.kohsuke.github.HttpException: Server returned HTTP response code: -1, message: 'null' for URL: https://api.github.com/repos/AmineBouzidi/master1/git/refs/heads/main
+	at PluginClassLoader for github-api//org.kohsuke.github.GitHubClient.interpretApiError(GitHubClient.java:743)
+	at PluginClassLoader for github-api//org.kohsuke.github.GitHubClient.sendRequest(GitHubClient.java:480)
+	at PluginClassLoader for github-api//org.kohsuke.github.GitHubClient.sendRequest(GitHubClient.java:427)
+	at PluginClassLoader for github-api//org.kohsuke.github.Requester.fetch(Requester.java:85)
+	at PluginClassLoader for github-api//org.kohsuke.github.GHRef.read(GHRef.java:111)
+	at PluginClassLoader for github-api//org.kohsuke.github.GHRepository.getRef(GHRepository.java:1993)
+	at PluginClassLoader for github-branch-source//org.jenkinsci.plugins.github_branch_source.GitHubSCMSource.retrieve(GitHubSCMSource.java:1691)
+	at PluginClassLoader for scm-api//jenkins.scm.api.SCMSource.fetch(SCMSource.java:581)
+	at PluginClassLoader for workflow-multibranch//org.jenkinsci.plugins.workflow.multibranch.SCMBinder.create(SCMBinder.java:104)
+	at PluginClassLoader for workflow-job//org.jenkinsci.plugins.workflow.job.WorkflowRun.run(WorkflowRun.java:315)
+	at hudson.model.ResourceController.execute(ResourceController.java:101)
+	at hudson.model.Executor.run(Executor.java:446)
+Finished: FAILURE
