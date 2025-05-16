@@ -1,0 +1,67 @@
+pipeline {
+    agent any
+
+    environment {
+        IMAGE_NAME = "notification-service"
+        DOCKER_HUB_REPO = "aminebd14"
+        DOCKER_USERNAME = "aminebd14"
+        DOCKER_PASSWORD = "dckr_pat_JldbWHItHP63m3HMjBXFJGyS9Tg"
+        TESTCONTAINERS_RYUK_DISABLED = 'true'  // Disable Ryuk to avoid connection refused error
+    }
+
+    stages {
+        stage('Checkout') {
+            steps {
+                checkout scm
+            }
+        }
+
+        stage('Build') {
+            steps {
+                dir('notification-service') {
+                    script {
+                        docker.image('maven:3.9.6-eclipse-temurin-17').inside {
+                            sh 'mvn clean package -DskipTests'
+                        }
+                    }
+                }
+            }
+        }
+
+        stage('Test') {
+            steps {
+                dir('notification-service') {
+                    script {
+                        docker.image('maven:3.9.6-eclipse-temurin-17').inside {
+                            sh 'mvn test'
+                        }
+                    }
+                }
+            }
+        }
+
+        stage('Docker Build') {
+            steps {
+                dir('notification-service') {
+                    sh "docker build -t $DOCKER_HUB_REPO/$IMAGE_NAME:latest ."
+                }
+            }
+        }
+
+        stage('Deploy to Docker Hub') {
+            steps {
+                withCredentials([usernamePassword(
+                    credentialsId: 'docker-hub-creds',
+                    usernameVariable: 'DOCKER_USERNAME',
+                    passwordVariable: 'DOCKER_PASSWORD'
+                )]) {
+                    sh '''
+                        echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+                        docker push $DOCKER_USERNAME/$IMAGE_NAME:latest
+                        docker logout
+                    '''
+                }
+            }
+        }
+    }
+}
